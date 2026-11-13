@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf4ea">
+  <meta name="description" content="Read how ReactTTt handles training history, device backups, and support emails.">
+  <title>ReactTTt Privacy Policy</title>
+  <link rel="canonical" href="https://gitchen666.github.io/ReactTTt/">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #faf4ea;
+      --white: #fffdf8;
+      --ink: #312421;
+      --muted: #594946;
+      --accent: #922d34;
+      --wash: #f1e3d9;
+      --rule: #decec3;
+      --serif: "DM Serif Text", Georgia, serif;
+      --sans: "Geist", "Segoe UI", sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { background: var(--paper); }
+    body { margin: 0; color: var(--ink); font: 1rem/1.65 var(--sans); }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: .13em; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: .25rem; }
+
+    .skip {
+      position: absolute;
+      z-index: 2;
+      inset: .75rem auto auto .75rem;
+      padding: .5rem .9rem;
+      transform: translateY(-150%);
+      background: var(--white);
+    }
+    .skip:focus { transform: none; }
+
+    .wrap { width: min(72rem, calc(100% - clamp(2rem, 8vw, 7rem))); margin-inline: auto; }
+    .masthead { border-top: .35rem solid var(--accent); }
+    .masthead .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      min-height: 4.35rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .brand {
+      display: inline-flex;
+      gap: .7rem;
+      align-items: center;
+      font-weight: 750;
+      font-size: 1.1rem;
+      letter-spacing: -.025em;
+    }
+    .mark {
+      width: 1.6rem;
+      height: 1.6rem;
+      border: .14rem solid var(--accent);
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--accent) 0 .23rem, transparent .25rem);
+    }
+    .date { color: var(--muted); font-size: .86rem; }
+
+    .title { max-width: 46rem; padding-block: clamp(2.75rem, 7vw, 5.35rem) clamp(2rem, 5vw, 3.5rem); }
+    h1, .policy h2 { margin: 0; font-family: var(--serif); font-weight: 400; }
+    h1 { font-size: clamp(2.65rem, 7vw, 5.6rem); line-height: 1.03; letter-spacing: -.055em; }
+    .title p { max-width: 62ch; margin: 1.15rem 0 0; color: var(--muted); font-size: 1.08rem; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(13rem, 16rem) minmax(0, 1fr);
+      align-items: start;
+      gap: clamp(1.25rem, 4.5vw, 4rem);
+      padding-bottom: clamp(2.5rem, 7vw, 6rem);
+    }
+    .contents { padding: 1.15rem; border: 1px solid var(--rule); border-radius: .45rem; background: var(--wash); }
+    .contents h2 { margin: 0 0 .5rem; font-size: .93rem; }
+    .contents ul { margin: 0; padding: 0; list-style: none; }
+    .contents a {
+      display: flex;
+      align-items: center;
+      min-height: 2.25rem;
+      padding-block: .25rem;
+      font-size: .89rem;
+      line-height: 1.35;
+    }
+
+    .policy {
+      min-width: 0;
+      padding: 0 clamp(1.15rem, 5vw, 3.5rem);
+      border: 1px solid var(--rule);
+      border-radius: .45rem;
+      background: var(--white);
+    }
+    .policy section { padding-block: clamp(1.5rem, 4vw, 2.5rem); scroll-margin-top: 1.15rem; }
+    .policy section + section { border-top: 1px solid var(--rule); }
+    .policy section:target h2 { color: var(--accent); }
+    .policy h2 {
+      font-size: clamp(1.38rem, 3vw, 1.85rem);
+      letter-spacing: -.025em;
+      line-height: 1.22;
+    }
+    .policy p { max-width: 69ch; margin: .85rem 0 0; overflow-wrap: anywhere; }
+
+    @media (max-width: 48rem) {
+      .layout { grid-template-columns: minmax(0, 1fr); }
+      .contents ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1rem; }
+    }
+
+    @media (max-width: 32rem) {
+      .masthead .wrap { flex-direction: column; align-items: flex-start; justify-content: center; padding-block: .85rem; gap: .2rem; }
+      .contents ul { grid-template-columns: minmax(0, 1fr); }
+      .contents a { min-height: 2.75rem; }
+    }
+
+    @media print {
+      html, .policy { background: #fff; }
+      body, .date, .title p, a { color: #000; }
+      .wrap { width: 100%; }
+      .skip, .contents, .mark { display: none; }
+      .masthead { border: 0; }
+      .masthead .wrap { min-height: 2rem; }
+      .title { padding-block: .8rem; }
+      h1 { font-size: 32pt; }
+      .layout { display: block; padding: 0; }
+      .policy { padding: 0; border: 0; }
+      .policy section { padding-block: .65rem; }
+      .policy h2 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="wrap">
+      <span class="brand"><span class="mark" aria-hidden="true"></span>ReactTTt</span>
+      <span class="date">Effective <time datetime="2026-11-09">November 9, 2026</time></span>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <div class="title">
+      <h1>Privacy Policy</h1>
+      <p>This policy explains how ReactTTt handles information when you use the app or contact the developer. The app works offline and does not require an account.</p>
+    </div>
+    <div class="layout">
+      <nav class="contents" aria-labelledby="contents-title">
+        <h2 id="contents-title">On this page</h2>
+        <ul>
+          <li><a href="#information-stored-on-your-device">1. Information Stored on Your Device</a></li>
+          <li><a href="#collection-and-transmission">2. Collection and Transmission</a></li>
+          <li><a href="#local-storage-and-device-services">3. Local Storage and Device Services</a></li>
+          <li><a href="#retention-and-deletion">4. Retention and Deletion</a></li>
+          <li><a href="#email-support">5. Email Support</a></li>
+          <li><a href="#sharing-and-tracking">6. Sharing and Tracking</a></li>
+          <li><a href="#your-choices">7. Your Choices</a></li>
+          <li><a href="#children-and-security">8. Children and Security</a></li>
+          <li><a href="#policy-updates">9. Policy Updates</a></li>
+          <li><a href="#privacy-contact">10. Privacy Contact</a></li>
+        </ul>
+      </nav>
+      <article class="policy" aria-label="ReactTTt Privacy Policy">
+        <section id="information-stored-on-your-device" aria-labelledby="information-stored-on-your-device-title">
+          <h2 id="information-stored-on-your-device-title">1. Information Stored on Your Device</h2>
+          <p>ReactTTt saves completed training sessions, including a randomly generated session ID, date and time, training type, level, reaction times, false starts, tap counts, test duration, per-second tapping counts, completed memory patterns, and mistakes. It also saves your haptic feedback preference. Session IDs identify local records; they are not advertising identifiers. This information is used to show your results, history, personal bests, charts, challenge unlocks, daily progress, and streaks.</p>
+        </section>
+        <section id="collection-and-transmission" aria-labelledby="collection-and-transmission-title">
+          <h2 id="collection-and-transmission-title">2. Collection and Transmission</h2>
+          <p>The app does not send your training history or settings to ReactTTt or a developer-operated server. There is no account, sign-in, advertising, tracking, analytics SDK, or third-party data collection SDK in the app. ReactTTt does not request access to your location, contacts, camera, microphone, photos, or health data. You do not need to provide personal information to train.</p>
+        </section>
+        <section id="local-storage-and-device-services" aria-labelledby="local-storage-and-device-services-title">
+          <h2 id="local-storage-and-device-services-title">3. Local Storage and Device Services</h2>
+          <p>Training history and settings are stored in the app’s local storage. The app does not implement its own cloud synchronization. Your device’s operating system or backup services may include app data in a device backup, depending on your settings. Apple may separately process App Store, device diagnostic, or backup information under its own policies and your settings. This is separate from the app’s own information handling. Manage those services through your Apple and device settings.</p>
+        </section>
+        <section id="retention-and-deletion" aria-labelledby="retention-and-deletion-title">
+          <h2 id="retention-and-deletion-title">4. Retention and Deletion</h2>
+          <p>Local training history remains until you delete individual sessions in History, choose Settings &gt; Clear All History, or delete the app. Clearing history also resets derived statistics, challenge unlocks, daily progress, and streaks; it preserves your haptic preference. Deleting the app removes both local history and settings from that device. Offloading the app can retain its data. Copies in device backups are managed separately through your backup provider; restoring a backup may restore app data. There is no developer-held copy of your training history for us to retrieve or delete.</p>
+        </section>
+        <section id="email-support" aria-labelledby="email-support-title">
+          <h2 id="email-support-title">5. Email Support</h2>
+          <p>If you choose to email <a href="mailto:EliasTrojak55164@outlook.com">EliasTrojak55164@outlook.com</a>, ReactTTt receives your email address and any message, attachments, or other information you choose to send. This information is used to respond to your request and handle related support, privacy, or legal matters. Your email service and the developer’s email provider process that correspondence as part of delivering and storing email. Do not include information you do not want to share. Support correspondence is retained only as needed for these purposes or as required by applicable law.</p>
+        </section>
+        <section id="sharing-and-tracking" aria-labelledby="sharing-and-tracking-title">
+          <h2 id="sharing-and-tracking-title">6. Sharing and Tracking</h2>
+          <p>ReactTTt does not sell or rent your information, use it for advertising, or track you across other apps or websites. The app does not share local training records with third parties. Information you voluntarily email is handled through email service providers and may be disclosed if required by applicable law. Opening the contact email link opens an email app; it does not automatically send a message or attach your scores.</p>
+        </section>
+        <section id="your-choices" aria-labelledby="your-choices-title">
+          <h2 id="your-choices-title">7. Your Choices</h2>
+          <p>You can use all training features without contacting the developer. View and delete training records in the app and manage your preference in Settings. You can ask questions about this policy or request access to, correction of, or deletion of support correspondence by contacting the developer. Applicable rights depend on your location. We cannot access training records stored only on your device. Local data may be lost if the app or device data is removed, so manage your device and backups accordingly.</p>
+        </section>
+        <section id="children-and-security" aria-labelledby="children-and-security-title">
+          <h2 id="children-and-security-title">8. Children and Security</h2>
+          <p>The app does not require or request personal information from children. A parent or guardian can contact the developer about personal information a child may have sent by email. Local information is subject to your device’s security protections; protect access to your device and backups. No storage or communication method can be guaranteed completely secure.</p>
+        </section>
+        <section id="policy-updates" aria-labelledby="policy-updates-title">
+          <h2 id="policy-updates-title">9. Policy Updates</h2>
+          <p>Updates to this policy will appear on this page with a revised effective date. The app’s privacy disclosures will be updated if its information handling changes. Where notice or consent is required by applicable law, it will be provided before the relevant change takes effect.</p>
+        </section>
+        <section id="privacy-contact" aria-labelledby="privacy-contact-title">
+          <h2 id="privacy-contact-title">10. Privacy Contact</h2>
+          <p>Developer: ReactTTt<br>
+Email: <a href="mailto:EliasTrojak55164@outlook.com">EliasTrojak55164@outlook.com</a><br>
+Contact this address for privacy questions or requests concerning information you voluntarily sent to the developer.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
